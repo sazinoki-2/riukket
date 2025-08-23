@@ -401,8 +401,8 @@ body::after {
 
 .official-link-button {
     display: inline-block;
-    background: #2d5f5f;
-    color: white;
+    background: #FFC1D3;
+    color: #333;
     text-decoration: none;
     padding: 1rem 2.5rem;
     border-radius: 8px;
@@ -414,9 +414,9 @@ body::after {
 }
 
 .official-link-button:hover {
-    background: #1a4040;
+    background: #ffadc4;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(45, 95, 95, 0.3);
+    box-shadow: 0 10px 25px rgba(255, 193, 211, 0.4);
 }
 
 /* Sajinoki Introduction Section */
@@ -462,8 +462,8 @@ body::after {
 
 .sajinoki-link-button {
     display: inline-block;
-    background: #2d5f5f;
-    color: white;
+    background: #D6FFC9;
+    color: #333;
     text-decoration: none;
     padding: 1rem 2.5rem;
     border-radius: 8px;
@@ -475,9 +475,9 @@ body::after {
 }
 
 .sajinoki-link-button:hover {
-    background: #1a4040;
+    background: #c7ffb5;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(45, 95, 95, 0.3);
+    box-shadow: 0 10px 25px rgba(214, 255, 201, 0.4);
 }
 
 .sajinoki-image {
@@ -761,54 +761,67 @@ body::after {
     font-size: 1.1rem;
 }
 
-.circles-grid {
+.circles-grid-new {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.circle-card {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+.circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.circle-image-placeholder {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border: 2px solid #bae6fd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     transition: all 0.3s ease;
-    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.circle-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+.circle-image-placeholder::before {
+    content: '🎨';
+    font-size: 2rem;
+    color: #0891b2;
+    opacity: 0.6;
 }
 
-.circle-card h4 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-    font-family: 'Kei', serif;
+.circle-image-placeholder:hover {
+    transform: scale(1.05);
+    border-color: #0891b2;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.circle-card p {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 1.5rem;
-}
-
-.circle-link {
+.circle-x-link {
     display: inline-block;
     background: #1da1f2;
     color: white;
     text-decoration: none;
-    padding: 0.7rem 1.5rem;
-    border-radius: 25px;
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
     font-weight: 500;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
+    min-width: 40px;
+    text-align: center;
 }
 
-.circle-link:hover {
+.circle-x-link:hover {
     background: #0d8bd9;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(29, 161, 242, 0.3);
 }
 
 /* Flow Section */
@@ -1250,8 +1263,14 @@ body::after {
         font-size: 1.7rem;
     }
     
-    .circles-grid {
-        grid-template-columns: 1fr;
+    .circles-grid-new {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .circle-image-placeholder {
+        width: 100px;
+        height: 100px;
     }
     
     .container {
@@ -1296,5 +1315,15 @@ body::after {
     
     .step-card {
         padding: 1.5rem;
+    }
+    
+    .circles-grid-new {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .circle-image-placeholder {
+        width: 80px;
+        height: 80px;
     }
 }
