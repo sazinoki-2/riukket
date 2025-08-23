@@ -485,7 +485,7 @@ body::after {
 
 .sajinoki-link-button-dark {
     display: inline-block;
-    background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%);
+    background: #1e3a8a;
     color: white;
     text-decoration: none;
     padding: 1rem 2.5rem;
@@ -498,9 +498,28 @@ body::after {
 }
 
 .sajinoki-link-button-dark:hover {
-    background: linear-gradient(135deg, #1d4ed8 0%, #374151 100%);
+    background: #1d4ed8;
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(30, 58, 138, 0.4);
+}
+
+.prime-supporter-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-family: 'Kei', serif;
+}
+
+.nft-holder-link {
+    color: #1e3a8a;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nft-holder-link:hover {
+    color: #1d4ed8;
 }
 
 .sajinoki-image {
