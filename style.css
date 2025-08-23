@@ -454,10 +454,13 @@ body::after {
     color: #333;
     line-height: 1.8;
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .sajinoki-description p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
 }
 
 .sajinoki-link-button {
@@ -478,6 +481,26 @@ body::after {
     background: #c7ffb5;
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(214, 255, 201, 0.4);
+}
+
+.sajinoki-link-button-dark {
+    display: inline-block;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    max-width: 200px;
+}
+
+.sajinoki-link-button-dark:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #374151 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.4);
 }
 
 .sajinoki-image {
@@ -754,6 +777,15 @@ body::after {
     backdrop-filter: blur(10px);
 }
 
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    font-family: 'Kei', serif;
+}
+
 .section-subtitle {
     text-align: center;
     color: #666;
@@ -775,6 +807,7 @@ body::after {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    justify-content: center;
 }
 
 .circle-image-placeholder {
@@ -991,20 +1024,30 @@ body::after {
 
 .access-info {
     padding: 2rem;
+    position: relative;
+}
+
+.access-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    font-family: 'Kei', serif;
+    margin-bottom: 1.5rem;
+    text-align: left;
 }
 
 .access-info h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     font-family: 'Kei', serif;
 }
 
 .access-info p {
     color: #333;
-    line-height: 1.8;
-    margin-bottom: 2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
     font-size: 1rem;
 }
 
@@ -1012,6 +1055,7 @@ body::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem 0;
 }
 
 /* Footer */
