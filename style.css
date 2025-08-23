@@ -258,12 +258,12 @@ body::after {
 
 /* Hero Section 2 (No Background) */
 .hero2 {
-    min-height: 100vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 8rem 0 4rem;
+    padding: 3rem 0 2rem;
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
 }
