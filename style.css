@@ -986,6 +986,10 @@ body::after {
     line-height: 1.6;
 }
 
+#general {
+    scroll-margin-top: 100px;
+}
+
 .circles-grid-new {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
