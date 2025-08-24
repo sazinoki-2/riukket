@@ -173,7 +173,7 @@ styleSheet.textContent = arrowFadeInKeyframes;
 document.head.appendChild(styleSheet);
 
 // Observe all sections
-document.querySelectorAll('.hero2, .content-section, .info-section, .flow-section, .circles-section, .layout-section').forEach(section => {
+document.querySelectorAll('.hero2, .main-content-section, .sajinoki-section, .content-section, .info-section, .flow-section, .circles-section, .layout-section').forEach(section => {
     observer.observe(section);
 });
 
