@@ -504,9 +504,13 @@ body::after {
 .sajinoki-title {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #2d5f5f;
+    background: linear-gradient(135deg, #87CEEB 0%, #FFB6C1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-family: 'Kei', serif;
-    margin-bottom: 1rem;
+    margin-bottom: -0.5rem;
+    text-align: center;
 }
 
 .sajinoki-description {
@@ -965,11 +969,13 @@ body::after {
     font-family: 'Kei', serif;
 }
 
-.section-subtitle {
+.sajinoki-text .section-subtitle {
     text-align: center;
     color: #666;
-    margin-bottom: 3rem;
-    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+    margin-top: 0;
+    line-height: 1.1;
 }
 
 .circles-grid-new {
