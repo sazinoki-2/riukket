@@ -714,6 +714,48 @@ body::after {
     z-index: 2;
 }
 
+.regulation-button-container {
+    text-align: center;
+    margin: 2rem 0 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.regulation-button {
+    display: inline-block;
+    background: #FFC1D3;
+    color: #333;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(255, 193, 211, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.regulation-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 193, 211, 0.4);
+    background: #ffadc4;
+}
+
+.regulation-title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+}
+
+.regulation-subtitle {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.8;
+    line-height: 1.2;
+}
+
 .steps-container {
     display: flex;
     justify-content: space-between;
