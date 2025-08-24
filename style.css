@@ -178,6 +178,7 @@ body::after {
 /* Logo Container */
 .logo-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -188,18 +189,30 @@ body::after {
 /* Main Logo */
 .logo-text {
     font-size: 9rem;
-    font-weight: 700;
-    font-family: 'Kei', serif;
+    font-weight: 900;
+    font-family: 'Arial Black', 'Impact', sans-serif;
     color: #ffffff;
-    text-shadow: 
-        0 0 40px rgba(100, 150, 255, 0.6),
-        0 0 80px rgba(100, 150, 255, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     position: relative;
     letter-spacing: 0.1em;
     opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1.2s ease-out forwards;
+    transform: translateX(-100px);
+    animation: fadeInSlideFromLeft 1.5s ease-out forwards;
     animation-delay: 0.8s;
+}
+
+.logo-subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'M PLUS 1', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: fadeInSlideFromLeft 1.5s ease-out forwards;
+    animation-delay: 1.3s;
 }
 
 @keyframes fadeInUp {
@@ -210,6 +223,17 @@ body::after {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSlideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -379,7 +403,6 @@ body::after {
 
 .main-content-section.visible .character-image:hover {
     transform: translateY(-15px) scale(1.03);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
 }
 
 @keyframes slideInFromLeft {
@@ -574,7 +597,6 @@ body::after {
 
 .sajinoki-section.visible .sajinoki-illustration:hover {
     transform: translateY(-15px) scale(1.03);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
 }
 
 /* Information Section */
@@ -682,11 +704,11 @@ body::after {
 }
 
 .flow-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
-    color: #0369a1;
+    color: #2c3e50;
     font-family: 'Kei', serif;
     position: relative;
     z-index: 2;
@@ -739,12 +761,14 @@ body::after {
 
 
 .step-header {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 900;
     color: #0891b2;
     margin-bottom: 0.5rem;
     position: relative;
     z-index: 2;
+    font-family: 'Arial Black', 'Impact', sans-serif;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 .step-divider {
