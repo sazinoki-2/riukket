@@ -978,6 +978,14 @@ body::after {
     line-height: 1.1;
 }
 
+.application-flow .section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
 .circles-grid-new {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
