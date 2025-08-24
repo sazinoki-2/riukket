@@ -652,7 +652,7 @@ body::after {
 
 /* Application Flow Section */
 .application-flow {
-    padding: 5rem 0;
+    padding: 6rem 0;
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 30%, #bae6fd 70%, #7dd3fc 100%);
     position: relative;
     overflow: hidden;
@@ -809,19 +809,68 @@ body::after {
     flex-shrink: 0;
 }
 
-.flow-description {
-    text-align: center;
-    margin: 2rem auto;
-    max-width: 600px;
-    color: #0c4a6e;
-    line-height: 1.6;
+.flow-info-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 1000px;
     position: relative;
     z-index: 2;
 }
 
-.flow-description p {
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
+.info-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(8, 145, 178, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(8, 145, 178, 0.6);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.info-card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0891b2;
+    margin-bottom: 1rem;
+    font-family: 'Kei', serif;
+    text-align: center;
+}
+
+.info-card p {
+    color: #164e63;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.circle-entry {
+    border-left: 4px solid #0891b2;
+}
+
+.general-entry {
+    border-left: 4px solid #f59e0b;
+}
+
+.flow-final-message {
+    text-align: center;
+    margin: 2rem auto;
+    position: relative;
+    z-index: 2;
+}
+
+.flow-final-message p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0c4a6e;
+    font-family: 'Kei', serif;
 }
 
 .flow-cta {
