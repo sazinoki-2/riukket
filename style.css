@@ -1419,6 +1419,10 @@ body::after {
     
     .hero {
         padding: 6rem 0 3rem;
+        background: url('riuketto4.pngsumaho.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
     
     .logo-text {
@@ -1488,7 +1492,7 @@ body::after {
     
     .circles-grid-new {
         grid-template-columns: repeat(3, 1fr);
-        gap: 0.3rem;
+        gap: 0.1rem;
     }
     
     .circle-image-placeholder {
