@@ -42,7 +42,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(255,255,255,0.75) 0%, rgba(240,248,255,0.85) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(240, 248, 255, 0.85) 100%);
     z-index: -1;
 }
 
@@ -225,6 +225,7 @@ body::after {
         opacity: 0;
         transform: translateY(30px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -236,6 +237,7 @@ body::after {
         opacity: 0;
         transform: translateX(-100px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -415,6 +417,7 @@ body::after {
         opacity: 0;
         transform: translateX(-50px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -426,6 +429,7 @@ body::after {
         opacity: 0;
         transform: translateX(50px);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -678,21 +682,17 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-        repeating-linear-gradient(
-            90deg,
+    background:
+        repeating-linear-gradient(90deg,
             transparent,
             transparent 98px,
             rgba(56, 189, 248, 0.03) 100px,
-            rgba(56, 189, 248, 0.03) 102px
-        ),
-        repeating-linear-gradient(
-            0deg,
+            rgba(56, 189, 248, 0.03) 102px),
+        repeating-linear-gradient(0deg,
             transparent,
             transparent 98px,
             rgba(56, 189, 248, 0.03) 100px,
-            rgba(56, 189, 248, 0.03) 102px
-        );
+            rgba(56, 189, 248, 0.03) 102px);
     z-index: 1;
 }
 
@@ -703,7 +703,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
+    background:
         radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 90% 80%, rgba(0, 255, 255, 0.08) 0%, transparent 50%),
         radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.05) 0%, transparent 50%);
@@ -712,8 +712,13 @@ body::after {
 }
 
 @keyframes cyberScan {
-    0% { transform: translateX(-10%); }
-    100% { transform: translateX(10%); }
+    0% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(10%);
+    }
 }
 
 .flow-title {
@@ -772,7 +777,7 @@ body::after {
 .steps-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 0.3rem;
     width: 100%;
     max-width: 1400px;
@@ -784,19 +789,18 @@ body::after {
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(0, 255, 255, 0.3);
     border-radius: 15px;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
-    box-shadow: 
+    box-shadow:
         0 8px 25px rgba(0, 0, 0, 0.1),
         inset 0 1px 0 rgba(255, 255, 255, 0.8),
         0 0 15px rgba(0, 255, 255, 0.2);
     backdrop-filter: blur(15px);
     transition: all 0.3s ease;
     width: 220px;
-    height: 330px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex: 1;
     position: relative;
@@ -808,7 +812,7 @@ body::after {
     background: rgba(255, 255, 255, 0.85);
     border-color: rgba(0, 255, 255, 0.6);
     transform: translateY(-5px);
-    box-shadow: 
+    box-shadow:
         0 15px 35px rgba(0, 0, 0, 0.15),
         0 0 30px rgba(0, 255, 255, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.9);
@@ -1201,7 +1205,10 @@ body::after {
 
 .image-modal-close:hover {
     color: #ddd;
-}"
+}
+
+"
+
 
 /* Access Section */
 .access-section {
@@ -1340,10 +1347,21 @@ body::after {
     animation: fadeInUp 0.8s ease forwards;
 }
 
-.fade-in:nth-child(1) { animation-delay: 0.2s; }
-.fade-in:nth-child(2) { animation-delay: 0.4s; }
-.fade-in:nth-child(3) { animation-delay: 0.6s; }
-.fade-in:nth-child(4) { animation-delay: 0.8s; }
+.fade-in:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.fade-in:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.fade-in:nth-child(4) {
+    animation-delay: 0.8s;
+}
 
 @keyframes fadeInUp {
     to {
@@ -1357,59 +1375,59 @@ body::after {
     .hero {
         text-align: center;
     }
-    
+
     .hero2-title {
         font-size: 3rem;
     }
-    
+
     .hero2-date {
         font-size: 1.4rem;
     }
-    
+
     .hero-title {
         font-size: 3rem;
     }
-    
+
     .two-column-layout {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .right-column {
         text-align: center;
     }
-    
+
     .sajinoki-layout {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .sajinoki-text {
         text-align: center;
         order: 2;
     }
-    
+
     .sajinoki-image {
         order: 1;
     }
-    
+
     .access-layout {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     .access-info {
         text-align: center;
     }
-    
+
     .info-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .links-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-links {
         grid-template-columns: 1fr;
     }
@@ -1419,27 +1437,27 @@ body::after {
     .nav {
         display: none;
     }
-    
+
     .mobile-nav-toggle {
         display: flex;
     }
-    
+
     .mobile-nav.active {
         display: flex;
     }
-    
+
     .mobile-nav-toggle.active span:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
-    
+
     .mobile-nav-toggle.active span:nth-child(2) {
         opacity: 0;
     }
-    
+
     .mobile-nav-toggle.active span:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
-    
+
     .hero {
         padding: 6rem 0 3rem;
         background: url('riuketto4.pngsumaho.png');
@@ -1447,86 +1465,86 @@ body::after {
         background-position: center center;
         background-repeat: no-repeat;
     }
-    
+
     .logo-text {
         font-size: 5rem;
     }
-    
+
     .hero-date {
         font-size: 1.4rem;
     }
-    
+
     .hero2-title {
         font-size: 2.5rem;
     }
-    
+
     .hero2-date {
         font-size: 1.2rem;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .character-image {
         max-width: 350px;
     }
-    
+
     .logo-image {
         max-width: 300px;
     }
-    
+
     .sajinoki-title {
         font-size: 2.5rem;
     }
-    
+
     .sajinoki-illustration {
         max-width: 350px;
     }
-    
+
     .steps-container {
         flex-direction: column;
         max-width: 400px;
     }
-    
+
     .step-item {
         padding: 1.2rem;
         width: 200px;
         height: 280px;
     }
-    
+
     .step-arrow-right {
         transform: rotate(90deg);
         margin: 0.5rem 0;
     }
-    
+
     .step-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .flow-title {
         font-size: 1.7rem;
     }
-    
+
     .flow-info-cards {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .circles-grid-new {
         grid-template-columns: repeat(3, 1fr);
         gap: 0.1rem;
     }
-    
+
     .circle-image-placeholder {
         width: 100px;
         height: 100px;
     }
-    
+
     .container {
         padding: 0 15px;
     }
-    
+
     .modal-content {
         margin: 25% auto;
         width: 95%;
@@ -1538,40 +1556,40 @@ body::after {
     .logo-text {
         font-size: 3.5rem;
     }
-    
+
     .hero-date {
         font-size: 1.2rem;
     }
-    
+
     .hero2-title {
         font-size: 2rem;
     }
-    
+
     .hero2-date {
         font-size: 1rem;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .card-content {
         padding: 1.5rem;
     }
-    
+
     .info-item {
         padding: 1.5rem;
     }
-    
+
     .step-card {
         padding: 1.5rem;
     }
-    
+
     .circles-grid-new {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
     }
-    
+
     .circle-image-placeholder {
         width: 80px;
         height: 80px;
