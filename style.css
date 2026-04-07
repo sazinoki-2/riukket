@@ -1029,10 +1029,9 @@ body::after {
 
 .circles-grid-new {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, auto);
-    gap: 1rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -1044,9 +1043,23 @@ body::after {
     justify-content: center;
 }
 
+.circle-image {
+    width: 208px;
+    height: 208px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.circle-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
 .circle-image-placeholder {
-    width: 150px;
-    height: 150px;
+    width: 208px;
+    height: 208px;
     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
     border: 2px solid #bae6fd;
     border-radius: 10px;
@@ -1240,7 +1253,6 @@ body::after {
     color: #ddd;
 }
 
-"
 
 
 /* Access Section */
@@ -1565,13 +1577,18 @@ body::after {
     }
 
     .circles-grid-new {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .circle-image-placeholder {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle-image {
+        width: 150px;
+        height: 150px;
     }
 
     .container {
@@ -1620,12 +1637,17 @@ body::after {
 
     .circles-grid-new {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
+        gap: 0.8rem;
     }
 
     .circle-image-placeholder {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-image {
+        width: 120px;
+        height: 120px;
     }
 }
 
@@ -1651,8 +1673,6 @@ body::after {
 
 /* Circle Images */
 .circle-image {
-    width: 150px;
-    height: 150px;
     object-fit: cover;
     border-radius: 8px;
     display: block;
@@ -1673,18 +1693,4 @@ body::after {
 
 .circle-name a:hover {
     text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .circle-image {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 480px) {
-    .circle-image {
-        width: 80px;
-        height: 80px;
-    }
-}
+}
