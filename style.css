@@ -206,6 +206,12 @@ body::after {
     animation-delay: 0.8s;
 }
 
+.hero-logo-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
 .logo-subtitle {
     font-size: 2rem;
     font-weight: 500;
